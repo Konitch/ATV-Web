@@ -17,7 +17,7 @@ app.get('/', function(req,res){
 //----------------math-----------------------
 //pow  (L)
 
-app.get('/potencia', function(req,res){
+app.get('/', function(req,res){
     res.render('potencia/calcpotencia');
 });
 
