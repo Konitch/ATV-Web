@@ -16,39 +16,16 @@ app.get('/', function(req,res){
 
 //----------------math-----------------------
 //pow  (L)
-
-app.get('/', function(req,res){
+app.get('/math', function(req,res){
     res.render('potencia/calcpotencia');
 });
 
-//  raiz (L)
-app.get('/raiz', function(req,res){
-    res.render('raiz/calcraiz');
-});
-
-/*
-//sin   
-app.get('/sin', function(req,res){
-    res.render('raiz/calcraiz');
-});
-
-
-
-//cos (L)
-app.get('/cos', function(req,res){
-    res.render('raiz/calcraiz');
-});
-
-*/
-
 //min and max (D)
-
 app.get('/minemax', function(req,res){
     res.render('minemax/minmax');
 });
 
 //logaritmo (D)
-
 app.get('/logaritmo', function(req,res){
     res.render('logaritmo/log');
 });

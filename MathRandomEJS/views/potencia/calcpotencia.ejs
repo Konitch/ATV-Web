@@ -6,14 +6,22 @@
     <title>Raiz e Potência</title>
 </head>
 <body>
+    <script>
+    function result(x, y){
+        document.getElementById("resultado").innerHTML = Math.pow(a,b);
+    }
+    </script>
     <h2>Cálculo de Potência</h2>
-    <form action="/res.php" method="POST">
+    <form>
         <label for="a">Potência de:</label><br>
         <input type="float" id="a" name="a" value="a"><br>
         <label for="b">Elevado a:</label><br>
         <input type="float" id="b" name="b" value="b"><br><br>
-        <input type="submit" value="Submit">
-      </form> 
-      
+        <input type="submit" value="Submit" onClick="result(a, b)">
+    </form> 
+
+    <p>Resultado:</p>
+    <p id="resultado"></p>
+        
 </body>
 </html>
