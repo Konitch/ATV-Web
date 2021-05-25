@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Número aleatório</h2>
+
+<p>Toda vez que você clica é gerado um número aleatório de 0 a 100:</p>
+
+<button onclick="document.getElementById('demo').innerHTML = getRndInteger(0,101)">Clique aqui</button>
+
+<p id="demo"></p>
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
+
+</body>
+</html>

@@ -16,7 +16,7 @@ app.get('/', function(req,res){
 
 //----------------math-----------------------
 //pow  (L)
-app.get('/math', function(req,res){
+app.get('/pow', function(req,res){
     res.render('potencia/calcpotencia');
 });
 
@@ -25,12 +25,16 @@ app.get('/minemax', function(req,res){
     res.render('minemax/minmax');
 });
 
-//logaritmo (D)
-app.get('/logaritmo', function(req,res){
-    res.render('logaritmo/log');
+//raiz 
+app.get('/raiz', function(req,res){
+    res.render('raiz/calcraiz');
 });
 
 //--------random----------------
+app.get('/numeroaleatorio', function(req,res){
+    res.render('random/random');
+});
+
 
 //--------Server----------------
 app.listen(3000, function(){
