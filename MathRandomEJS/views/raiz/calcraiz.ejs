@@ -6,12 +6,19 @@
     <title>Raiz e Potência</title>
 </head>
 <body>
+    <script>
+    function result(){
+    	x = document.getElementById("a").value
+        document.getElementById("resultado").innerHTML = Math.sqrt(x);
+    }
+    </script>
     <h2>Cálculo de Raiz</h2>
-    <form action="/res.php" method="POST">
-        <label for="a">Raiz quadrada de:</label><br>
+        <p>Raiz quadrada de:</p><br>
         <input type="float" id="a" name="a" value="a"><br>
-        <input type="submit" value="Submit">
-      </form> 
-      
+        <button onClick="result()">Confirmar</button>
+
+    <h3>Resultado: <b id="resultado"></b></h3>
+    
+        
 </body>
 </html>
