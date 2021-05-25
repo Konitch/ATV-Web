@@ -7,21 +7,21 @@
 </head>
 <body>
     <script>
-    function result(x, y){
-        document.getElementById("resultado").innerHTML = Math.pow(parsefloat(a), parsefloat(b));
+    function result(){
+    	x = document.getElementById("a").value
+    	y = document.getElementById("b").value
+        document.getElementById("resultado").innerHTML = Math.pow(x, y);
     }
     </script>
     <h2>Cálculo de Potência</h2>
-    <form>
-        <label for="a">Potência de:</label><br>
+        <p>Potência de:</p><br>
         <input type="float" id="a" name="a" value="a"><br>
-        <label for="b">Elevado a:</label><br>
+        <p>Elevado a:</p><br>
         <input type="float" id="b" name="b" value="b"><br><br>
-        <input type="submit" value="Submit" onClick="result(a, b)">
-    </form> 
+        <button onClick="result()">Confirmar</button>
 
-    <p>Resultado:</p>
-    <p id="resultado"></p>
+    <h3>Resultado: <b id="resultado"></b></h3>
+    
         
 </body>
 </html>
